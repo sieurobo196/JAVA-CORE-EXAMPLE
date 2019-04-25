@@ -42,11 +42,12 @@ public class DisplayZoneAndOffSet {
 
             //replace Z to +00:00
             String offset = zos.getId().replaceAll("Z", "+00:00");
-           
+            System.out.println(zone.toString());
+            System.out.println(zos.getId());
             result.put(zone.toString(), offset);
 
         }
-        sortbyKey(result);
+//        sortbyKey(result);
         System.out.println("Total Zone IDs: "+result.size());
 //        sortByValues(result);
     }
